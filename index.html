@@ -58,19 +58,18 @@ Die Golden Gate Bridge ist eines der berühmtesten Bauwerke der Welt und das unb
   </p>
 <img src="https://usareisetipps.com/wp-content/uploads/golden-gate-bridge-battery-spencer-jpg-webp.webp" alt="Golden Gate Bridge" class="themenbild">
    
-  <div class="controls">
-   <label for="colorSelect">Markierfarbe:</label>
-   <select id="colorSelect">
-   <option value="yellow">Gelb</option>
-   <option value="lightgreen">Grün</option>
-   <option value="lightblue">Blau</option>
-   <option value="red">Rot</option>
-   <option value="white">Weiß</option>
-   </select>
-   <button onclick="highlightSelection()"> Markieren 🖍️</button>
-    </div>
-   </div>
+ <div class="controls">
+  <label for="colorSelect">Markierungsfarbe:</label>
+  <select id="colorSelect" onchange="setColor(this.value)">
+    <option value="yellow">Gelb</option>
+    <option value="lightgreen">Grün</option>
+    <option value="lightblue">Blau</option>
+    <option value="red">Rot</option>
+    <option value="white">Weiß (lösche markierte Wörter)</option>
+  </select>
+</div>
 
+ 
    <script src="script.js"></script>
 
    </body>
@@ -78,9 +77,12 @@ Die Golden Gate Bridge ist eines der berühmtesten Bauwerke der Welt und das unb
  <div class="legende">
     <h3>Legende</h3>
     <ul>
-      <li><strong>vary</strong>-varrieren</li>
-      <li><strong>therefore-</strong>daher</li>
-      <li>various<strong>-</strong>verschiedene</li>
+     <li><strong>equiring-</strong>erfordern</li>
+    <li><strong>magnificent-</strong>großartig</li>
+    <li><strong>various-</strong>verschiedene</li>
+    <li><strong>vary-</strong>varrieren</li>
+    <li><strong>therefore-</strong>daher</li>
+    <li><strong>recognized-</strong>anerkannt</li>
     </ul>
   </div>
 
